@@ -25,7 +25,8 @@ npm-debug.log*
 *.html
 *.css
 *.js
-images/
+# Exclude root images/ but keep hp/images/
+/images/
 
 # Exclude other directories
 .specstory/
