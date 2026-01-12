@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="お問い合わせフォーム。初回相談は無料です。お気軽にご連絡ください。">
+    <title>お問い合わせ | ふじみ野 〇〇会計事務所</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1><a href="index.html">ふじみ野 〇〇会計事務所</a></h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="reason.html">選ばれる理由</a></li>
+                    <li><a href="service.html">サービス・料金</a></li>
+                    <li><a href="profile.html">代表プロフィール</a></li>
+                    <li><a href="voice.html">お客様の声</a></li>
+                    <li><a href="faq.html">よくある質問</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html" class="contact-link active">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページヘッダー -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">お問い合わせ</h1>
+            <p class="page-subtitle">初回相談は無料です。お気軽にご連絡ください</p>
+        </div>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- お問い合わせフォーム -->
+                    <div class="contact-form-wrapper">
+                        <h2 class="contact-form-title">お問い合わせフォーム</h2>
+                        <p class="contact-form-description">
+                            以下のフォームにご記入の上、送信してください。通常、24時間以内にご返信いたします。
+                        </p>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name" class="form-label">お名前 <span class="required">必須</span></label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kana" class="form-label">フリガナ <span class="required">必須</span></label>
+                                <input type="text" id="kana" name="kana" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">メールアドレス <span class="required">必須</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">電話番号</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">会社名・事業者名</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inquiry-type" class="form-label">お問い合わせ種別 <span class="required">必須</span></label>
+                                <select id="inquiry-type" name="inquiry-type" class="form-select" required>
+                                    <option value="">選択してください</option>
+                                    <option value="consultation">初回相談（無料）</option>
+                                    <option value="corporate">法人決算について</option>
+                                    <option value="individual">確定申告について</option>
+                                    <option value="startup">起業支援について</option>
+                                    <option value="inheritance">相続税相談について</option>
+                                    <option value="cloud">クラウド会計について</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span><a href="#">プライバシーポリシー</a>に同意します <span class="required">必須</span></span>
+                                </label>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-large">送信する</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- その他の連絡方法 -->
+                    <div class="contact-other">
+                        <h2 class="contact-other-title">その他の連絡方法</h2>
+                        
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">📞 お電話</h3>
+                            <p class="contact-method-info">
+                                <a href="tel:048-XXX-XXXX" class="contact-phone">048-XXX-XXXX</a><br>
+                                受付時間：平日 9:00〜18:00<br>
+                                土曜：9:00〜15:00（予約制）
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">💬 公式LINE</h3>
+                            <p class="contact-method-info">
+                                お気軽にご相談ください。簡単な質問なら即時対応可能です。
+                            </p>
+                            <a href="#" class="btn btn-line btn-large">公式LINE友だち追加</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">📧 メール</h3>
+                            <p class="contact-method-info">
+                                <a href="mailto:info@example.com">info@example.com</a><br>
+                                通常24時間以内にご返信いたします。
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3 class="contact-method-title">📍 事務所への訪問</h3>
+                            <p class="contact-method-info">
+                                〒354-XXXX<br>
+                                埼玉県ふじみ野市〇〇〇〇<br>
+                                事前にご予約をお願いいたします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ふじみ野 〇〇会計事務所</h3>
+                    <p class="footer-text">〒354-XXXX 埼玉県ふじみ野市〇〇〇〇</p>
+                    <p class="footer-text">TEL: 048-XXX-XXXX</p>
+                    <p class="footer-text">Mail: info@example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">サービス</h4>
+                    <ul class="footer-links">
+                        <li><a href="service.html">法人決算</a></li>
+                        <li><a href="service.html">確定申告</a></li>
+                        <li><a href="service.html">起業支援</a></li>
+                        <li><a href="service.html">相続税相談</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">サイトマップ</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="reason.html">選ばれる理由</a></li>
+                        <li><a href="profile.html">代表プロフィール</a></li>
+                        <li><a href="voice.html">お客様の声</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ふじみ野 〇〇会計事務所. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- フローティングボタン -->
+    <div class="floating-buttons">
+        <a href="contact.html" class="floating-btn floating-btn-contact" aria-label="お問い合わせ">
+            <span>お問い合わせ</span>
+        </a>
+        <a href="#" class="floating-btn floating-btn-line" aria-label="公式LINE">
+            <span>LINE</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
